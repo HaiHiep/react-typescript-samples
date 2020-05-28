@@ -1,0 +1,1 @@
+export { ResetPass } from './resetPage';

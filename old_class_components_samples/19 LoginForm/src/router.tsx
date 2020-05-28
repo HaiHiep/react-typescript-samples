@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 import { App } from './app';
-import { About, MembersPage, MemberPageContainer, Login } from './components';
+import { About, MembersPage, MemberPageContainer, Login, ResetPass } from './components';
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
   return (
@@ -10,6 +10,7 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
         <Route component={App} />
         <Switch>
           <Route exact path="/" component={Login} />
+          <Route exact path="/resetpass" component={ResetPass} />
           <Route path="/about" component={About} />
           <Route path="/members" component={MembersPage} />
           <Route exact path="/member" component={MemberPageContainer} />

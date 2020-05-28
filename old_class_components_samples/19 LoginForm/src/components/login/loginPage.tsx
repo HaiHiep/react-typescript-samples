@@ -6,6 +6,7 @@ import { isValidLogin } from '../../api/login';
 import { LoginEntity, createEmptyLogin } from '../../model';
 import { NotificationComponent } from '../../common/components/notification';
 import { CenteredView } from '../../layout';
+import { Link } from 'react-router-dom';
 
 interface Props extends RouteComponentProps<any> {
 }
@@ -64,6 +65,7 @@ export class Login extends React.Component<Props, State> {
             />
           </CardContent>
         </Card>
+        <Link className="nav-link" to="/resetpass"> About</Link>
       </CenteredView>
     );
   }

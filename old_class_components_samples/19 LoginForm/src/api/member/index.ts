@@ -74,4 +74,6 @@ export const memberAPI = {
   fetchMembersAsync,
   saveMember,
   fetchMemberById,
+  updateMember,
+  insertMember
 };
